@@ -1,0 +1,53 @@
+@import 'core';
+
+body {
+    background-color: rgb(68, 64, 64) !important;
+}
+
+.registration-window {
+    @include size(500px,650px);
+    background-color: #F8FAFB;
+    border-radius: 8px;
+    @include margin(70px,auto,0,auto);
+    @include padding(0,20px,0,20px);
+}
+
+.title {
+    @include font(24px,600);
+    @include padding(20px);
+    color: #687279;
+}
+
+span {
+    color: #898b8b;
+}
+
+.second-line {
+    @include padding(20px,40px);
+    @include flex(start,start);
+    gap: 20px;
+    
+
+    & >.second-line_text {
+       @include font(12.8px,400); 
+
+       & > span {
+            color: #898b8b;
+            @include font(12px,400);
+       }
+    }
+
+    & > .second-line_textarea {
+        @include size(60%,50px);
+        border-radius: 4px;
+        border: $border;
+        @include padding(4,10px);
+        @include font(13px,400); 
+    }
+}
+
+.line {
+    @include size(90%,2px);
+    @include margin(30px,auto,0,auto);
+    background-color: #EDEEF0;
+}

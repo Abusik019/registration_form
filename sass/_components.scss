@@ -1,0 +1,200 @@
+@import 'core';
+
+.first-line {
+    @include flex(start,start);
+    gap: 20px;
+    @include padding(30px,40px);
+    @include font(13px,400);
+    
+    & > .first-line_input {
+        @include size(60%,25px);
+        border-radius: 4px;
+        border: $border;
+        @include padding(0,10px);
+    }
+}
+
+.third-line {
+    @include flex(start,start);
+    gap: 40px;
+    @include padding(30px,40px);
+    @include font(13px,400);
+
+    & > .third-line-text {
+        @include size(125px,100px);
+        @include font(13px,400);
+
+        & > span {
+            @include font(12px,400);
+        }
+    }
+
+    & > .third-line-inputs {
+        @include size(max-content,70px);
+        display: flex;
+        flex-flow: row wrap;
+        align-content: space-between;
+
+        &  > .third-line-input, .third-line-input1, .third-line-input2  {
+            flex: 0 1 100%;
+        }
+    }
+}
+
+.four-line{
+    @include flex(start,start);
+    gap: 30px;
+    @include margin(0,40px);
+    @include font(13px,400);
+
+    & > .four-line-par {
+        @include font(13px,400);
+
+        & > span {
+            @include font(12px,400);
+        }
+    }
+
+    & > .four-line-wrapper{
+        @include flex(space-between,center);
+        gap: 10px;
+
+        & > .four-line_input{
+            @include size(85px, 45px);
+            border-radius: 3px;
+            border: $border;
+            @include flex(center,flex-end);
+            transition: all .2s ease;
+        
+            & > label {
+                @include font(12px,bold);
+                @include padding(0,0,15px,0);
+            }
+
+
+            & > input[type=radio]{
+                display: none;
+            }
+
+            &:has(> input[type=radio]:checked){
+                border: 2px solid #73A1D8;
+                background-color: #cee3ff;
+            }
+        }
+        
+    }
+}
+
+.five-block {
+    @include flex(start,start);
+    gap: 70px;
+    @include padding(30px,40px);
+    @include font(13px,400);
+    width: 60%;
+
+    & > .five-block-text {
+        @include font(13px,400);
+        width: 100px;
+
+        & > span {
+            @include font(12px,400);
+        }
+    }
+    
+
+
+    & > .five-block-cont {
+        @include size(max-content,130px);
+        display: flex;
+        flex-flow: row wrap;
+        align-content: space-between;
+    
+        & > .select-cont {
+            @include size(299px,25px);
+            border-radius: 4px;
+            border: $border;
+            @include padding(0,10px);
+            flex: 0 1 100%;
+        }
+
+        & > .five-line_input1 > .address {
+            @include size(286px,25px);
+            border-radius: 4px;
+            border: $border;
+            @include padding(0,10px);
+            flex: 0 1 100%;
+        }
+
+        & > .five-line_input2 > .address2 {
+            @include size(286px,25px);
+            border-radius: 4px;
+            border: $border;
+            @include padding(0,10px);
+            flex: 0 1 100%;
+        }
+
+        & > .five-line_input3 {
+            display: flex;
+            gap: 7px;
+
+            & > .city {
+                @include size(143px,25px);
+                border-radius: 4px;
+                border: $border;
+                @include padding(0,10px);
+            }
+
+            & > .five-line-select {
+                @include size(65px,28px);
+                border-radius: 4px;
+                border: $border;
+                @include padding(0,5px);
+                @include font(11px,400);
+
+            }
+
+            & > .zipcode {
+                @include size(53px,25px);
+                border-radius: 4px;
+                border: $border;
+                @include padding(0,7px);
+                @include font(11px,400);
+            }
+        }
+    }
+}
+
+.six-block {
+    @include flex(start,start);
+    gap: 30px;
+    @include padding(30px,40px);
+    @include font(13px,400);
+
+    & > .six-block-text {
+        @include font(13px,400);
+
+        & > span {
+            @include font(12px,400);
+        }
+    }
+
+    & > .six-block-input {
+        @include font(13px,400);
+
+        & > label > span {
+            @include font(13px,bold);
+            color: black;
+        }
+    }
+}
+
+.submit {
+    @include size(200px,30px);
+    @include margin(10px,calc(50% - 100px));
+    background-color: #4094F7;
+    border: none;
+    border-radius: 4px;
+    @include font(13px,400);
+    color: white;
+    cursor: pointer;
+}

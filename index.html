@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Document</title>
+
+        <link rel="stylesheet" href="./css/app.css">
+        <link rel="stylesheet" href="./css/reset.css">
+
+    </head>
+    <body>
+        <form class="registration-window">
+            <h1 class="title">About your business</h1>
+            <div class="first-line">
+                <label for="input1">Your businesss title</label>
+                <input type="text" class="first-line_input" id="input1" placeholder="Text input">
+            </div>
+            <div class="second-line">
+                <h1 class="second-line_text">Description of<br>business conducted<br><span>Helpful description</span></h1>
+                <textarea class="second-line_textarea" name="textarea" id="textarea1" cols="30" rows="1.5">I've typed something here</textarea>
+            </div>
+            <div class="third-line">
+                <h1 class="third-line-text">Company type<br><span>Helpful description</span></h1>
+                <div class="third-line-inputs">
+                    <div class="third-line-input">
+                        <input type="radio" name="radio" id="radio1">
+                        <label for="radio1">LLC / Partnetship / Single-member</label>
+                    </div>
+                    <div class="third-line-input1">
+                        <input type="radio" name="radio"  id="radio2">
+                        <label for="radio2">C / S Corporation</label>
+                    </div>
+                    <div class="third-line-input2">
+                        <input type="radio" name="radio"  id="radio3">
+                        <label for="radio3">B Corporation</label>
+                    </div>
+                </div>
+            </div>
+            <div class="four-line">
+
+                <h1 class="four-line-par">Number of <br>employees<br><span>Helpful description</span></h1>
+                
+                <div class="four-line-wrapper">
+                    <div class="four-line_input">
+                        <input class="line_input" type="radio" name="radio1" id="radio4">
+                        <label class="radio4-label" for="radio4">1-20</label>
+                    </div>
+                    <div class="four-line_input">
+                        <input class="line_input" type="radio" name="radio1" id="radio5">
+                        <label class="radio4-label" for="radio5">21-49</label>
+                    </div>
+                    <div class="four-line_input">
+                        <input class="line_input" type="radio" name="radio1" id="radio6">
+                        <label class="radio4-label" for="radio6">50+</label>
+                    </div>
+                </div>
+            </div>
+            <div class="five-block">
+                <h1 class="five-block-text">Business address<br><span>Helpful description</span></h1>
+                <div class="five-block-cont">
+                    <select class="select-cont">
+                        <option disabled selected>Select country</option>
+                        <option value="russia">Россия</option>
+                        <option value="england">Англия</option>
+                        <option value="france">Франция</option>
+                    </select>
+                
+                    <div class="five-line_input1">
+                        <input type="text" class="address" placeholder="Address line 1" required>   
+                    </div>
+                    <div class="five-line_input2">
+                        <input type="text" class="address2" placeholder="Address line 2">
+                    </div>
+                    <div class="five-line_input3">
+                        <input class="city" type="text" placeholder="City" required>
+                        <select class="five-line-select" id="select1">
+                            <option disabled selected>State</option>
+                            <option value="moscow">Московская область</option>
+                            <option value="dagestan">P.Дагестан</option>
+                            <option value="saha">P.Саха</option>
+                        </select>
+                        <input class="zipcode" type="text" placeholder="Zipcode" required>
+                    </div>
+                </div>
+            </div>
+            <div class="six-block">
+                <h2 class="six-block-text">Billing address<br><span>Helpful description</span></h2>
+                <div class="six-block-input">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">Same as <span>business address</span></label>
+                </div>
+            </div>
+        <div class="line"></div>
+        <input class="submit" type="submit" value="Continue">
+        </form>
+    </body>
+</html>
